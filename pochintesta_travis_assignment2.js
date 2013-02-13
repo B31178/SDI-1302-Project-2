@@ -5,6 +5,8 @@
 
 //  Variables
 
+var offOn = "Yes";
+
 var computerOn = true;
 var monitorOn = false;
 var allOn = true;
@@ -51,7 +53,47 @@ var techName = function(name, reply) {
 	if name = tech(1);
 			return name + arrive;
 	} else {
-			return "A tech is on the way."
+			return "A tech is on the way.";
 	}
 	
 //  Main Code
+
+/*Initial Procedure*/
+
+console.log "Welcome to the IT Dept.  Have you tried turning it off and on again?";
+
+	if offOn === ("Yes") { 
+			console.log "Excellent!  Now we just need a little more information to complete your ticket.";
+	} else {
+			console.log "Please do so now.";
+	}
+			
+/*Boolean Function Call*/
+
+console.log "Is everything turned on?";
+	
+		console.log isOn;
+		
+		
+/*Number Function Call*/
+
+console.log "On which floor are you located?";
+
+		console.log whichFloor;
+
+/*Array Function Call*/
+
+console.log "Determining tech on call.";
+
+		console.log whichTech;
+		
+/*String Function Call*/
+
+console.log techName
+
+
+		
+		
+
+
+
