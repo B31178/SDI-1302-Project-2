@@ -3,16 +3,12 @@
 //	Project 2
 //	Functions & Loops
 
-//  Variables
+//  Non-Function Global Variables
 
 /*Pertains to Initial Procedure in Main Code*/
 var offOn = "Yes";
-/*Pertains to Boolean Function*/
-computerOn = true;
-monitorOn = false;
-allOn = true;
 /*Pertains to Array Function*/
-var tech1 = ["Moss", "Roy", "Jan"];
+var techList = ["Moss", "Roy"/*,"Jan"*/]; /*Temporarily commented out index 2 test part of my Array Function*/
 /*Pertains to String Function*/
 var arrive = " will arrive shortly.";
 
@@ -41,12 +37,18 @@ var whichFloor = function(floor) {
 	
 /*Array Function*/
 var whichTech = function(tech) {
-			for (var  tech = 0; tech < 2; tech++) {
+			for (var  tech = 0; tech < techList.length; tech++) {
 				console.log("Determining Tech...");
-			}
-				console.log("Roy is the tech on call.");
+				}
+			if(techList.length < 3) {
+				console.log(techList.length + " techs are currently available.");
+			} else {
+				console.log("All techs are available.");
+				}
+				console.log( techList[1] + " is the tech on call.");
 			return whichTech;
 			}
+			
 /*String Function*/
 var techName = function(name) {
 		if(name = "Roy") {
