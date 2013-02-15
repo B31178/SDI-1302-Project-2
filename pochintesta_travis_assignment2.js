@@ -5,21 +5,16 @@
 
 //  Variables
 
+/*Pertains to Initial Procedure in Main Code*/
 var offOn = "Yes";
-
-var computerOn = true;
-var monitorOn = false;
-var allOn = true;
-
-var tech = ["Moss", "Roy", "Jan"];
-
-var tier1 = [1, 2, 3, 4];
-var tier2 = [5, 6, 7, 8];
-var tier3 = [9, 10, 11, 12];
-
-var floor = 7;
-
-var name = "Roy";
+/*Pertains to Boolean Function*/
+computerOn = true;
+monitorOn = false;
+allOn = true;
+/*Pertains to Array Function*/
+var tech1 = ["Moss", "Roy", "Jan"];
+/*Pertains to String Function*/
+var arrive = " will arrive shortly.";
 
 //  Functions
 
@@ -27,73 +22,71 @@ var name = "Roy";
 var isOn = function(computerOn, monitorOn, allOn) {
 	
 	if((computerOn && monitorOn) || allOn) {
-			return "Excellent!  Now we just need a little more information to complete your ticket.";
+			console.log("Excellent!  Now we just need a little more information to complete your ticket.");
 	} else {
-			return "Please do so now.";
+			console.log("Please do so now.");
+				return isOn;
+	}
 	}
 	
 /*Number Function*/
-var whichFloor = function(tier1, tier2, tier3) {
+var whichFloor = function(floor) {
 
-	if floor = ( tier1(0) || tier1(1) || tier1(2) || tier1(3) );
-		while (floor <= 12) {
-			console.log "Determining support tier.";
-	} else {
-			console.log "Come down from the roof.";	
+		while (floor < 8) {
+			console.log("Determining Tier...");
+				floor++; 
+			}console.log("A Tier 2 ticket has been created.");
+		return whichFloor;
+		}
 	
 /*Array Function*/
-var whichTech = function(tech(0), tech(1), tech(2)) {
-	if 
-	
+var whichTech = function(tech) {
+			for (var  tech = 0; tech < 2; tech++) {
+				console.log("Determining Tech...");
+			}
+				console.log("Roy is the tech on call.");
+			return whichTech;
+			}
 /*String Function*/
-var techName = function(name, reply) {
-	
-	var arrive = " will arrive shortly.";
-	
-	if name = tech(1);
-			return name + arrive;
-	} else {
-			return "A tech is on the way.";
-	}
+var techName = function(name) {
+		if(name = "Roy") {
+			console.log(name + arrive);
+		} else {
+			console.log("A tech is on the way.");
+		} 
+		return techName;
+		}
 	
 //  Main Code
 
 /*Initial Procedure*/
 
-console.log "Welcome to the IT Dept.  Have you tried turning it off and on again?";
+console.log("Welcome to the IT Dept.  Have you tried turning it off and on again?");
 
-	if offOn === ("Yes") { 
-			console.log "Excellent!  Now we just need a little more information to complete your ticket.";
+	if (offOn === "Yes") { 
+			console.log("Excellent!  Now we just need a little more information to complete your ticket.");
 	} else {
-			console.log "Please do so now.";
+			console.log("Please do so now.");
 	}
 			
 /*Boolean Function Call*/
 
-console.log "Is everything turned on?";
+console.log("Is everything turned on?");
 	
-		console.log isOn;
-		
+		(isOn(true, false, true));
 		
 /*Number Function Call*/
 
-console.log "On which floor are you located?";
+console.log("On which floor are you located?");
 
-		console.log whichFloor;
+		(whichFloor(7));
 
 /*Array Function Call*/
 
-console.log "Determining tech on call.";
+console.log("Determining tech on call.");
 
-		console.log whichTech;
+		(whichTech(2));
 		
 /*String Function Call*/
 
-console.log techName
-
-
-		
-		
-
-
-
+		(techName("Roy"));
